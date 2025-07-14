@@ -1,0 +1,31 @@
+# Build directories
+build/
+cmake-build-*/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Generated files
+*.o
+*.so
+*.a
+vldwm
+compile_commands.json
+
+# Documentation
+docs/html/
+docs/latex/
+docs/xml/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+core

@@ -1,0 +1,45 @@
+# Doxyfile for VLDWM
+
+PROJECT_NAME           = "VLDWM Display Server"
+PROJECT_NUMBER         = "@PROJECT_VERSION@"
+PROJECT_BRIEF          = "A custom display server implementation"
+
+OUTPUT_DIRECTORY       = @CMAKE_BINARY_DIR@/docs
+CREATE_SUBDIRS         = YES
+
+INPUT                  = @CMAKE_SOURCE_DIR@/include \
+                        @CMAKE_SOURCE_DIR@/src \
+                        @CMAKE_SOURCE_DIR@/README.md
+
+RECURSIVE              = YES
+FILE_PATTERNS          = *.c *.h *.md
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_XML           = NO
+
+HTML_OUTPUT            = html
+HTML_TIMESTAMP         = YES
+
+HAVE_DOT               = YES
+DOT_IMAGE_FORMAT       = svg
+DOT_TRANSPARENT        = YES
+
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+
+SEARCHENGINE           = YES
+SERVER_BASED_SEARCH    = NO
+
+OPTIMIZE_OUTPUT_FOR_C  = YES
+TYPEDEF_HIDES_STRUCT   = YES
+
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
