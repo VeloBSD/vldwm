@@ -60,7 +60,7 @@ sudo pacman -S base-devel cmake pkgconf git \
 
 ```bash
 # Clone and enter the project directory
-git clone https://github.com/your-username/vldwm.git
+git clone https://github.com/VeloBSD/vldwm
 cd vldwm
 
 # Build (release mode)
